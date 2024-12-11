@@ -1,0 +1,166 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1050,1226" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="strDolarQuotation" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="906,1039" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" IsIncognito="True" ScopeGuid="4009ebce-3acf-4433-bd55-17f12fc50c9d" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="872,790" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into - Cotação Dolar Search" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="838,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="4009ebce-3acf-4433-bd55-17f12fc50c9d" Text="Cotação dolar hoje[k(Enter)]" Timeout="5" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=Cota%C3%A7%C3%A3o+dolar+hoje&amp;oq=Cota%C3%A7%C3%A3o+dolar+hoje&amp;gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRiPAjIHCAIQIRiPAtIBCTExMjdqMGoxNagCCLACAQ&amp;sourceid=chrome&amp;ie=UTF-8" CVScreenId="0853f4ce-4852-40f7-adf6-f31c55dec759" DesignTimeRectangle="165, 59, 1513, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='New Incognito Tab - Google Chrome (Incognito)' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" Guid="38552c39-5e82-47a8-ac45-cbba62d1631c" InformativeScreenshot="e44918fa075f050660fe266a6d6a6d55.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New Incognito Tab - Google Chrome' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NCheckState DisplayName="Check App State - Quotation frame appears" sap:VirtualizedContainerService.HintSize="838,480" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="4009ebce-3acf-4433-bd55-17f12fc50c9d" Timeout="5" Version="V4">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears - Quotation frame appears" sap:VirtualizedContainerService.HintSize="450,240" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NGetText DisplayName="Get Text - Dolar Quotation" sap:VirtualizedContainerService.HintSize="416,180" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="4009ebce-3acf-4433-bd55-17f12fc50c9d" TextString="[strDolarQuotation]" Version="V4">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=Cota%C3%A7%C3%A3o+dolar+hoje&amp;oq=Cota%C3%A7%C3%A3o+dolar+hoje&amp;gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg70gEHODgwajBqMagCALACAQ&amp;sourceid=chrome&amp;ie=UTF-8" CVScreenId="bb9c5bcb-bc4d-4d7a-a88a-d8554dc1b8a6" DesignTimeRectangle="240, 500, 118, 42" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl idx='2' tag='INPUT' type='number' /&gt;" Guid="90890fd7-4159-498b-971b-288fe477eb45" ImageBase64="" InformativeScreenshot="bd7284dc1f472d7e3ca91297fa5c3580.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Cotação dolar hoje - Pesquisa Google' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CVScreenId="bb9c5bcb-bc4d-4d7a-a88a-d8554dc1b8a6" DesignTimeRectangle="358, 500, 196, 40" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Real brasileiro' class='sBsFoc' parentid='knowledge-currency__updatable-data-column' tag='SPAN' /&gt;" Guid="273b7dc4-92d5-47e8-80df-cf48204e0ad8" SearchSteps="Selector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Throw DisplayName="Throw - Quotation frame does not appear" Exception="[New Exception(&quot;Quotation frame does not appear&quot;)]" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="Throw_1" />
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=Cota%C3%A7%C3%A3o+dolar+hoje&amp;oq=Cota%C3%A7%C3%A3o+dolar+hoje&amp;gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg70gEHODgwajBqMagCALACAQ&amp;sourceid=chrome&amp;ie=UTF-8" CVScreenId="bb9c5bcb-bc4d-4d7a-a88a-d8554dc1b8a6" DesignTimeRectangle="238, 317, 182, 24" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aaname='  igual a' parentid='knowledge-currency__updatable-data-column' tag='DIV' /&gt;" Guid="d288e102-8f97-48ca-80b8-b4b3333c47df" InformativeScreenshot="097f164af8679a21393f54dabbde9b73.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Cotação dolar hoje - Pesquisa Google' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="64b62f4762cd78f4a4e882a6dcf0d492.png" Selector="&lt;html app='chrome.exe' title='New Tab' /&gt;" Title="New Tab" Url="chrome://newtab/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:LogMessage DisplayName="Log Message - Dolar Quotation" sap:VirtualizedContainerService.HintSize="906,164" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Dolar Hoje: R$&quot;+strDolarQuotation]" />
+  </Sequence>
+</Activity>

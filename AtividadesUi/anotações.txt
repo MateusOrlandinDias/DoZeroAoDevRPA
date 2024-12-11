@@ -1,0 +1,28 @@
+﻿	• Atividades Ui mais usadas:
+		Use Application/Browser: Para abrir o navegador e configurar em um escopo maximo sua interação Ui
+		Click: Para clicar em botões ou links.
+		Type Into: Para inserir texto em campos.
+		Check App State: Para verificar se um elemento ou aplicativo está em um estado esperado antes de prosseguir.
+		Get Text: Para capturar textos de elementos na tela.
+		Click Image: Para clicar com base em imagens (menos confiável, mas útil em algumas situações específicas).
+		
+		Verificar outras atividades da package Ui Automation
+		
+	• Propriedades Essenciais:
+		○ Wait for Page Load: Configura o robô para esperar o carregamento completo da página antes de executar a próxima ação. Ideal para atividades web.
+		○ Targeting Methods:
+Strict Selector: Mais confiável, depende de um seletor bem definido e estável.
+Fuzzy Selector: Aceita variações no seletor, mas é menos preciso.
+Image-Based: Usa imagens como referência, sendo menos confiável e mais sujeito a erros visuais.
+
+	• Dica prática:
+“Sempre que possível, use o Strict Selector. É a opção mais confiável, especialmente quando os seletores são estáveis e bem configurados.”
+
+Prática: Pesquisa no Google da Cotação do Dólar
+	• Objetivo: Criar um robô que pesquisa a cotação do dólar no Google e exibe o valor em um Log Message.
+	• Passo a Passo:
+		1. Abra o Google no navegador: Use uma atividade Open Browser.
+		2. Digite a pesquisa no campo de busca: Use Type Into para inserir “cotação do dólar hoje” e depois uma atividade Enter para pesquisar.
+		3. Verifique se o quadro de cotação apareceu: Use Check App State para verificar a presença do elemento com a cotação. Se não aparecer, exiba uma mensagem de erro no Log Message.
+		4. Capture o valor do dólar: Utilize Get Text para extrair o valor da cotação.
+		5. Exiba no Log Message: Mostre o valor capturado no console do UiPath.
