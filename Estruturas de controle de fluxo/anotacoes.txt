@@ -1,0 +1,30 @@
+﻿#IF - Usado na tomada de decisões
+Se {alguma condição for atendida} faça {tal coisa}
+Else - {Se não for atendida a condição} faça {essa outra coisa}
+
+#Else-If - Usado na tomada de decisões
+Se {alguma condição for atendida} faça {tal coisa}
+Se {outra condição for atendida} faça {tal outra coisa}
+Else - Se {NENHUMA condição for atendida} faça {algo}
+
+#While - Executa o bloco de ações enquanto a condição for verdadeira. Útil quando sabemos que uma condição deve ser verificada antes de cada execução.
+Condição atendida?
+Sim - Executa o que está no bloco de ações e já verifica novamente a condição pra ver se continua o loop
+Não - Sai desse loop
+
+#Do While - Executa o bloco pelo menos uma vez antes de verificar a condição, ideal quando precisamos que a ação aconteça pelo menos uma vez.
+1. Executa o bloco de ação
+2. Confere se a condição é verdadeira
+Condição é verdadeira?
+Sim - Entra no bloco de ação continuando o loop
+Não - Termina o loop
+
+#ForEach - Estrutura para iterar por listas, coleções ou arrays, muito usada em cenários de automação com dados em massa.
+Exemplo: Para cada item da minha lista de super mercado quero que seja feita {tal coisa}
+
+#Switch - É usado quando temos múltiplas condições para avaliar, tornando o código mais organizado do que um monte de If-Else encadeados.
+Exemplo: Medalhas olimpicas e seu lugar no podium
+É bronze? Ficou em terceiro lugar
+É prata? Ficou em segundo lugar
+É ouro? Ficou em primeiro lugar
+Não é nenhum desses? Cai no case default
